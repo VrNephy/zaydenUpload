@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'beon'; 
+    src: url('beon.medium.otf'); 
+}
+@font-face {
+    font-family: 'oxygen'; 
+    src: url('oxygen.light.ttf'); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: black;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: (50%) 
+}
+
+
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family: 'beon'; 
+    font-size: 35px;
+
+}
+
+.logo{
+    width: 12%;
+    cursor: pointer;
+}
+.logo2{
+    flex: auto;
+    width: 25%;
+    cursor: pointer;
+    flex-direction: row;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+     text-decoration: none ;
+     color: #29353e;
+     text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #67c344;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.content{
+    width: 40%;
+    text-align: left;
+    color: #29353e;
+    font-family: 'oxygen'; 
+    
+}
+.content p{
+    width: 80%;
+    text-align: left;
+    color: #29353e;
+    font-family: 'oxygen'; 
+    font-size: 25px;
+}
+.content h1{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'beon'; 
+    font-size: 40px;
+}
+
+button{
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #67c344;
+    color:#fff;
+    cursor: pointer;
+    
+}
+.first-banner{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    background-color: #fff;
+    text-decoration: none ;
+    font-family: 'oxygen';
+    text-align: center;
+}
+a{
+    background-color: #fff;
+    text-decoration: none ;
+    color:#29353e;
+    margin-left: 40px;
+}
+.footernav{
+    display:flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
